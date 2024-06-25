@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EduVista</title>
+    <meta property="og:title" content="EduVista - Landing Page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}" />
+    <style data-tag="reset-style-sheet">
+        html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+        html {
+            font-family: Inter;
+            font-size: 16px;
+        }
+
+        body {
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            text-transform: none;
+            letter-spacing: normal;
+            line-height: 1.15;
+            color: var(--dl-color-theme-neutral-dark);
+            background-color: var(--dl-color-theme-neutral-light);
+            fill: var(--dl-color-theme-neutral-dark);
+        }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css" />
+</head>
+<body>
+    <div>
+        <link href="{{ url_for('static', filename='index.css') }}" rel="stylesheet" />
+
+        <div class="landing-container">
+            <div class="landing-landing-page">
+                <div class="landing-header-navbar">
+                    <div class="landing-header-container">
+                        <div class="landing-logo">
+                            <img alt="edulogo1I453" src="{{ url_for('static', filename='images/edulogo1.svg') }}" class="landing-edulogo1" />
+                            <span class="landing-text"><span>EduVista</span></span>
+                        </div>
+                        <div class="landing-button-frame">
+                            <a href="https://example.com" target="_blank" rel="noreferrer noopener" class="landing-link">Future Plan</a>
+                            <a href="https://example.com" target="_blank" rel="noreferrer noopener" class="landing-link1">About Us</a>
+                            <a href="{{ url_for('auth') }}" class="landing-buttons">
+                                <span class="landing-text02 HB">Login/Sign Up</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="landing-landingpage">
+                    <div class="landing-content">
+                        <div class="landing-title-area">
+                            <div class="landing-body-text">
+                                <span class="landing-text03"><span>EduVista - A new way of teaching</span></span>
+                                <span class="landing-text05 HB">
+                                    <span>
+                                        Unlock the potential of every lesson with EduVista! Our cutting-edge machine learning technology transforms teaching by delivering insightful statistics and analytics. Empower educators with data-driven strategies to enhance student engagement, track progress, and optimize learning outcomes. Experience a smarter way to teach with EduVista – where innovation meets education.
+                                    </span>
+                                </span>
+                            </div>
+                            <img alt="IMAGE578885038H1024x70012226" src="{{ url_for('static', filename='images/image578885038h1024x70012226-w26k-600w.png') }}" class="landing-image578885038h1024x7001" />
+                        </div>
+                        <a href="{{ url_for('auth') }}" class="landing-buttons1">
+                            <span class="landing-text07"><span>Get Started</span></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="landing-features-section-container">
+                    <div class="landing-features-section">
+                        <span class="landing-text09"><span>Features</span></span>
+                        <div class="landing-feature-container">
+                            <div class="landing-feature-card">
+                                <span class="landing-text11 h3"><span>Upload PDF</span></span>
+                                <span class="landing-text13 p">
+                                    <span>
+                                        Upload your question paper to our site and our machines will split them into individual questions.
+                                    </span>
+                                </span>
+                                <div class="landing-frame2">
+                                    <svg viewBox="0 0 1024 1024" class="landing-icon">
+                                        <path d="M554 384h236l-236-234v234zM256 86h342l256 256v512q0 34-26 59t-60 25h-512q-34 0-60-25t-26-59l2-684q0-34 25-59t59-25z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="landing-feature-card1">
+                                <span class="landing-text15 h3"><span>AI Classification</span></span>
+                                <span class="landing-text17 p">
+                                    <span>
+                                        Our advanced AI model will correctly classify and append each question to its respective type.
+                                    </span>
+                                </span>
+                                <div class="landing-frame21">
+                                    <svg viewBox="0 0 1024 1024" class="landing-icon2">
+                                        <path d="M864 0h-768c-52.8 0-96 43.2-96 96v832c0 52.8 43.2 96 96 96h768c52.8 0 96-43.2 96-96v-832c0-52.8-43.2-96-96-96zM832 896h-704v-768h704v768zM256 576h448v64h-448zM256 704h448v64h-448zM320 288c0-53.019 42.981-96 96-96s96 42.981 96 96c0 53.019-42.981 96-96 96s-96-42.981-96-96zM480 384h-128c-52.8 0-96 28.8-96 64v64h320v-64c0-35.2-43.2-64-96-64z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="landing-feature-card2">
+                                <span class="landing-text19 h3"><span><b>Insights</b></span></span>
+                                <span class="landing-text21 p">
+                                    <span>
+                                        Get visual insights into each section and subject topic to improve and streamline your effort.
+                                      </span>
+                                  </span>
+                                  <div class="landing-frame22">
+                                      <svg viewBox="0 0 1170.2857142857142 1024" class="landing-icon4">
+                                          <path d="M365.714 512v292.571h-146.286v-292.571h146.286zM585.143 219.429v585.143h-146.286v-585.143h146.286zM1170.286 877.714v73.143h-1170.286v-877.714h73.143v804.571h1097.143zM804.571 365.714v438.857h-146.286v-438.857h146.286zM1024 146.286v658.286h-146.286v-658.286h146.286z"></path>
+                                      </svg>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </body>
+  </html>
